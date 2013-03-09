@@ -1,0 +1,295 @@
+%% By M. Fuad Hasan (March 2013).
+%% Modified version from ModernCV Latex template.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+% TODO:
+% - Add more explanation on proficiency/skill and work experience sections
+% - Clean up, make simple and informative
+%
+
+\documentclass[10pt, a4paper]{moderncv}
+
+\moderncvtheme[blue, roman]{classic}
+
+\usepackage{ifxetex}
+\ifxetex                								% only for xelatex
+\usepackage{xltxtra}    								% this should load both fontspec & xunicode
+\usepackage{fontspec}
+\setromanfont{Helvetica Neue}
+\else
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\fi
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for classic theme, if you want to change the width of your name placeholder (to leave more space for your address details)
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% publications section rename
+\renewcommand{\refname}{Publications}
+
+% personal info header
+\firstname{}
+\familyname{}
+\photo{picture}
+\title{Curriculum Vitae} 
+\address{}{Jakarta, Indonesia}
+\mobile{+62 857 789 897 17}
+\email{fuad\_hasan@fastmail.jp}
+\homepage{www.linkedin.com/in/mfuadhasan}
+
+
+%\fontspec[Ligatures={Common, Historical}]{Helvetica Neue}
+%\fontsize{10pt}{18pt}\selectfont @ngoles
+
+% to show numerical labels in the bibliography; only useful if you put citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+%\newcommand\Colorhref[3][cyan]{\href{#2}{\small\color{#1}#3}}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{darkgray}{rgb}{0.4,0.4,0.4}
+\newcommand\Colorhref[1]{\small\textcolor{RoyalBlue}{\url{#1}}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\begin{small}
+\textcolor{darkgray}{
+\textbf{I'm a strongly motivated individual, working to improve my abilities on a daily basis. Always interested in exciting and challenging projects in creative environments where I can
+both contribute and learn from a great team of people.}}
+\end{small}
+
+%----------------------------------------------------------------------------------
+%            Personal
+%----------------------------------------------------------------------------------
+\section{Personal}
+\cvline{Full Name}{Muhammad Fuad Hasan}
+\cvline{Place, Date of Birth}{Ujung Pandang, Indonesia, July 6 1986}
+\cvline{Sex, Marital Status}{Male, Single}
+%\cvline{Religion}{Islam}
+%\cvline{Home Address}{Jl. Mampang Prapatan XI No.70 RT 001 RW 04, Jakarta Selatan, Indonesia 12790} 
+
+%----------------------------------------------------------------------------------
+%            Education
+%----------------------------------------------------------------------------------
+\section{Education}
+\cventry{\begin{small}Oct 2011\end{small}}{Bachelor of Engineering in Informatics Engineering}{STT Telkom}{Bandung, Indonesia}{}
+{
+\begin{scriptsize}
+Final Project: "Signaling Performance Analysis of Mobile IPV6 Integrated on MPLS Network with XCAST6."\\
+\end{scriptsize}
+}  % arguments 3 to 6 can be left empty
+
+%----------------------------------------------------------------------------------
+%            Experience
+%----------------------------------------------------------------------------------
+\section{Experience}
+\cventry{\begin{small}Nov 2012--Current\end{small}}{Freelance (Software Developer)}{Kickstart Interactive}{}{Jakarta Selatan, Indonesia} 
+{ 
+\begin{scriptsize} 
+Build "Paramanusa Filing"application .\\
+\end{scriptsize}
+}
+\cventry{\begin{small}Nov 2011--Oct 2012\end{small}}{Network Engineer \& Developer}{PT. Bigjava}{Bigjava.com}{Jakarta Selatan, Indonesia} 
+{ 
+\begin{scriptsize} 
+Build and deploy network application for telco industry.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Aug--Sep 2009\end{small}}{Intern (Engineering)}{PT. Bandung Sinergi Akses Teknologi}{Greenlinks ISP}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+Network Monitoring and maintenance.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Jul--Sep 2008\end{small}}{Intern (Customer Service Division)}{PT. Telekomunikasi Indonesia}{Bandung, Indonesia}{}
+{
+\begin{scriptsize}
+Handle customer complaint and create software to help in process complaint solution handling.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Jul--Aug 2007\end{small}}{Freelance (Network Engineer)}{Independent Contractor}{Bandung Indonesia}{}
+{
+\begin{scriptsize}
+Maintenance and build network infrastruture for complex residance.\\
+\end{scriptsize}
+}
+
+%----------------------------------------------------------------------------------
+%            Skills
+%----------------------------------------------------------------------------------
+\section{Skills}
+\cvline{Languages}{C++/C, Python, Perl, Shell Script, Java, Scheme, PHP, Javascript, SQL, HTML, \LaTeX}
+\cvline{Technologies}{Asterisk, JVM, OpenGL ES 1.1/2.0, OpenGL}
+\cvline{Software}{gcc, Git, Mercurial, gdb, BASH/ZSH, Vim}
+\cvline{Idioms}{Bilingual, Indonesian and English. (\textbf{108/120 TOEFL Score}), Basic Mandarin}
+
+%----------------------------------------------------------------------------------
+%            Projects & Interests
+%----------------------------------------------------------------------------------
+\section{Projects \& Interests}
+\cventry{\begin{small}July 2009--Current\end{small}}{Stack Overflow}{}{}{}
+{
+\begin{small}Average top 15\% user, with a ~2.5k reputation.\end{small}\\
+\Colorhref{http://stackoverflow.com/users/145077/mr-gando}\\
+}
+\cventry{\begin{small}May 2011--Current\end{small}}{Github}{Xcode 4 Template Generator}{}{}
+{
+\begin{small}Python script to help in the process of making Xcode 4 Templates.\end{small}\\
+\Colorhref{ https://github.com/MrGando/Xcode-4-Template-Generator}\\
+}
+\cventry{\begin{small}15+ years\end{small}}{Piano Playing}{}{}{}
+{
+Have been studying piano nearly all my life, music is a huge part of me.
+}
+
+%----------------------------------------------------------------------------------
+%            Activities (for a while: 6 entries)
+%----------------------------------------------------------------------------------
+\section{Activities}
+\cventry{\begin{small}Nov 2010--Mar 2011\end{small}}{Study Member}{Study Group at eLearning Lab}{IT Telkom Bandung, Indonesia}{}
+{
+\begin{scriptsize}
+I learned about eLearning technology particularly on the web.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Dec 2009--Oct 2010\end{small}}{Study Member}{Study and Research Group at Data Mining Lab}{IT Telkom Bandung, Indonesia}{}
+{
+\begin{scriptsize}
+I learned about Data mining research.\\ 
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Sep 2007--Aug 2009\end{small}}{Research and Teaching Assistant}{Teleinformatics Operating System Lab.}{IT Telkom Bandung, Indonesia}{}
+{
+\begin{itemize}
+\item Doing research: "Failover Firewalls System using CARP Protocol on OpenBSD." 
+\item Teaching for some network material.\\
+
+\end{itemize}
+}
+
+\cventry{\begin{small}Aug 2006--May 2007\end{small}}{Study Member}{Linux User Group (LUG)}{STT Telkom Bandung, Indonesia}{}
+{
+\begin{scriptsize}
+I actively learned opensource software and help to promote/teach it in my campus.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Dec 2004--Oct 2006\end{small}}{Journalist}{Masyarakat Jurnalistik Community}{STT Telkom Bandung, Indonesia}{}
+{
+\begin{scriptsize}
+I learned about journalistic and wrote news articles for campus journal/magazine as amateur journalist.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Nov 2004--May 2005\end{small}}{Study Member}{Study Group at Artificial Intelligence Lab.}{STT Telkom Bandung, Indonesia}{}
+{
+\begin{scriptsize}
+I learned fundamental theory about Artificial Intelligence and its algorithms implementation in software.\\
+\end{scriptsize}
+}
+
+
+%----------------------------------------------------------------------------------
+%            Short Course & Seminar (for a while: 11 entries)
+%----------------------------------------------------------------------------------
+\section{Short Course \& Seminar}
+\cventry{\begin{small}Jun 2012\end{small}}{Cisco Innovate 2012}{Seminar}{by Cisco Systems}{Jakarta, Indonesia}
+{
+\begin{scriptsize}
+As representative for my employer (PT. Bigjava).\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Feb 2011\end{small}}{Qt Workshop for Developer}{Short Course}{by Nokia Indonesia}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As software developer, I learned to develop application based on Qt framework that run at Nokia's mobile phone products.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Feb 2010\end{small}}{Security in eBanking}{Seminar}{by Switching Technique Lab. IT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As seminar participant.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Feb 2009\end{small}}{IP Multimedia Sub System (IMS) Technology}{Seminar}{by Switching Technique Lab. IT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As seminar participant.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Sep 2008\end{small}}{Ruby on Rails Application Development}{Short Course}{by Software Engineering Lab. IT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As student, I learned to build application using Ruby on Rails framework.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Sep 2007\end{small}}{WiMax Technology}{Short Course}{by Mobile Communication Lab. STT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As student, I learned about WiMax technology, deployment, and applications.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Sep 2006\end{small}}{eBusiness and Portal Service}{Seminar}{by Software Engineering Lab. STT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As seminar participant.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}May 2006\end{small}}{Softswitch Training Using Asterisk}{Short Course}{by Telecommunication Access Lab. STT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As student, I learned to setup and configure Asterisk softswitch for campus telephone/VoIP exchange.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Mar 2005\end{small}}{Open Source and Network Security}{Seminar}{by Teleinformatics Lab. STT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As seminar participant.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Jan 2005\end{small}}{Relational Database Fundamental Training}{Short Course}{by Database Lab. STT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As student, I learned to create relational database using ER diagram then implement it on MSSQL.\\
+\end{scriptsize}
+}
+
+\cventry{\begin{small}Dec 2004\end{small}}{Workshop Computer Hardware \& Troubleshooting}{Short Course}{by Computer Hardware Lab. STT Telkom}{Bandung, Indonesia}
+{
+\begin{scriptsize}
+As student, I learned to assemble personal computer (PC) hardware and how to do troubleshoot.\\
+\end{scriptsize}
+}
+
+
+%----------------------------------------------------------------------------------
+%            References
+%----------------------------------------------------------------------------------
+\section{References}
+\cventry{}{Available upon Request}{}{}{}
+{
+}
+
+\end{document}
+
