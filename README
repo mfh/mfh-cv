@@ -1,7 +1,29 @@
-This modified version for my CV from github.com/Goles/mrgando-resume template.
+This's a modified version from http://github.com/Goles/mrgando-resume template
+for my CV.
 
+Files:
 - make.py           -- makefile
 - mfh.tex           -- main doc
 - tweaklist.sty     -- style item that can adjusted
 - publications.bib  -- list bibliography
+
+Sections:
+1. Personal:
+            - Done (skip it for a while)
+2. Education:
+            - Done (skip it for a while)
+3. Experience:
+            - Need to add explanation etc
+4. Skill:
+            - Need to add explanation etc
+5. Projects & Interests:
+            - Need to add explanation etc
+6. Activities:
+            - Need to add explanation etc
+7. Short Course & Seminar:
+            - Need to add explanation
+            - it should explain what i did in each of those short course &
+              seminar
+- References:
+            - Done (skip it for a while)
 
