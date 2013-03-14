@@ -2,21 +2,20 @@
 %% Muh. Fuad Hasan (March 2013)
 %% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com)
 %  TODO:
-% - Keep to update with more entries
+% - Always update with more entries
 % - Clean-up, make simple, brief but informative
-% - proofreading (check grammar and spelling)
+% - Proofreading (check grammar and spelling)
 
 %----------------------------------------------------------------------------------
 %            Pre (done)
 %----------------------------------------------------------------------------------
 \documentclass[10pt, a4paper]{moderncv}
-
-\moderncvtheme[blue, roman]{classic}                    % default theme classic
+\moderncvtheme[blue, roman]{classic}                    % default theme is classic
 
 % only for xelatex
 \usepackage{ifxetex}
 \ifxetex                								
-    \usepackage{xltxtra}                                % this should load both fontspec & xunicode
+    \usepackage{xltxtra}                                % this is load both fontspec & xunicode
     \usepackage{fontspec}
     \setromanfont{Helvetica Neue}
 \else
@@ -43,10 +42,7 @@
 \email{fuad\_hasan@fastmail.jp}
 \homepage{www.linkedin.com/in/mfuadhasan}
 
-%\fontspec[Ligatures={Common, Historical}]{Helvetica Neue}
-%\fontsize{10pt}{18pt}\selectfont @ngoles
-
-% to show numerical labels in the bibliography; it useful if need to put citations
+% to show numerical labels in the bibliography (useful if you need to put citations)
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 \makeatother
@@ -64,10 +60,10 @@
 \maketitle
 
 \begin{small}
-\textcolor{darkgray}{
-\textbf{I am a strongly motivated individual, working to improve my knowledge, skills, and abilities
-on a daily basis. Always interested in exciting and challenging projects in creative environments
-where I can both contribute and learn from a great team of people.}}
+    \textcolor{darkgray}{
+    \textbf{I am a strongly motivated individual, working to improve my knowledge, skills, and abilities on a daily basis.
+            Always interested in exciting and challenging projects in creative environments where I can both contribute
+            and learn from a great team of people.}}
 \end{small}
 
 
@@ -79,7 +75,7 @@ where I can both contribute and learn from a great team of people.}}
 \cvline{Place, Date of Birth}{Ujung Pandang, Indonesia, July 6 1986}
 \cvline{Sex, Marital Status}{Male, Single}
 %\cvline{Religion}{Islam}
-%\cvline{Home Address}{Jl. Mampang Prapatan XI No.70 RT.1 RW.4, Jakarta Selatan, Indonesia 12790} 
+%\cvline{Home Address}{Jl. Mampang Prapatan XI No.70 RT.1 RW.4, Jakarta Selatan, Indonesia 12790}
 
 
 %----------------------------------------------------------------------------------
@@ -89,7 +85,7 @@ where I can both contribute and learn from a great team of people.}}
 \cventry{\begin{small}Oct 2011\end{small}}{Bachelor of Engineering in Informatics Engineering}{STT Telkom (IT Telkom)}{Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-    Final Project: "Signaling Performance Analysis of Mobile IPV6 Integrated on MPLS Network with XCAST6".\\
+        Final Project: "Signaling Performance Analysis of Mobile IPV6 Integrated on MPLS Network with XCAST6".
     \end{scriptsize}
 }
 
@@ -101,39 +97,37 @@ where I can both contribute and learn from a great team of people.}}
 \cventry{\begin{small}Nov 2012--Current\end{small}}{Software Developer (Freelance)}{Kickstart Interactive (startup)}{}{Jakarta, Indonesia} 
 { 
     \begin{scriptsize} 
-    Contribute to the development of "Paramanusa Filing" application product with target market
-    for small and middle enterprise.\\
+        Contribute in development of "Paramanusa Filing" application product with target market for small and middle enterprise.
     \end{scriptsize}
 }
 \cventry{\begin{small}Nov 2011--Oct 2012\end{small}}{Network Engineer}{PT. Bigjava (bigjava.com)}{}{Jakarta Selatan, Indonesia} 
 { 
     \begin{itemize} 
-    \item Develop and deploy network application product with target market for telecommunication companies in Indonesia.
-    \item Meet with clients to establish software specifications and also doing product presentation to potential customers.
-    \item Lead a small team of 2-3 engineers to work on a project in specific product development.\\
+        \item Developed and deployed network application product with target market for telecommunication companies in Indonesia.
+        \item Met with clients to establish software specifications and also doing product presentation to potential customers.
+        \item Led a small team of 2-3 engineers to work on a project in specific product development.
     \end{itemize}
 }
 \cventry{\begin{small}Jul--Sep 2009\end{small}}{Network Engineer (Intern)}{PT. Bandung Sinergi Akses Teknologi (Greenlinks ISP)}{}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    Monitor and study network performance of Greenlinks data center as information
-    basis in planning to improve its network service to end-clients.\\
+        Monitor and study network performance of Greenlinks data center as information basis in planning to improve its network
+        service to end-clients.
     \end{scriptsize}
 }
 \cventry{\begin{small}Jul--Oct 2008\end{small}}{Network Technician (Freelance)}{Independent Contractor}{}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    Install, configure, and maintain computer network infrastructure for blocks home residence.\\
+        Installed, configured, and maintained computer network infrastructure for blocks home residence.
     \end{scriptsize}
 }
 \cventry{\begin{small}Jul--Aug 2007\end{small}}{Customer Complaint Service Officer (Intern)}{PT. Telekomunikasi Indonesia}{}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    Handle formal complaint from customer and develop a web application to help managing
-    complaint's problem solving process.\\
+        Handled formal complaint from customer and developed a web application to help managing complaint's problem solving process.
     \end{scriptsize}
 }
-\\
+
 
 %----------------------------------------------------------------------------------
 %            Skills (more explanation, fix this first)
@@ -141,8 +135,8 @@ where I can both contribute and learn from a great team of people.}}
 \section{Skills}
 \cvline{Languages}{C++, Python, Perl, Shell Script, Java, PHP, SQL, \LaTeX, Scheme, Go}     % computer language
 \cvline{Protocols \& APIs}{ XML, JSON, SOAP, REST}                                          %
-\cvline{Software}{gcc, gdb, BASH/ZSH, Vim, Microsoft office, XFCE, KDE, GNOME etec}         % software, need framework qt mpi etc
-\cvline{Database}{MongoDB, MySQL, MSSQL, Redis, and PostgreSQL}                             % database
+\cvline{Software}{gcc, gdb, BASH/ZSH, Vim, Microsoft office, XFCE, KDE, GNOME etc}         % software, need framework qt mpi etc
+\cvline{Database}{MongoDB, MySQL, Redis, PostgreSQL, Oracle, MS SQL}                        % database
 \cvline{Hardware}{ATCA platform, IBM, HP, and Dell Blade Server}                            % hardware
 \cvline{Operating System}{GNU/Linux (RedHat/CentOS, SuSE, Slackware, and Debian/Ubuntu), BSD (FreeBSD,
     OpenBSD, NetBSD, OpenDarwin, and OpenSolaris), Apple OS X, Microsoft
@@ -161,12 +155,12 @@ where I can both contribute and learn from a great team of people.}}
 
 
 %----------------------------------------------------------------------------------
-%            Projects & Interests (i'll put this on if it really needed)
+%            Projects & Interests (i'll put this on later if needed)
 %----------------------------------------------------------------------------------
 %\section{Projects \& Interests}
 %\cventry{\begin{small}July 2009--Current\end{small}}{Stack Overflow}{}{}{}
 %{
-%    \begin{small}Average top 15\% user, with a ~2.5k reputation.\end{small}\\
+%    \begin{small}Average top 15\% user, with a ~2.5k reputation.\end{small}\\              % symbol '\\' for adding newline
 %    \Colorhref{http://stackoverflow.com/users/145077/mr-gando}\\
 %}
 %\cventry{\begin{small}May 2011--Current\end{small}}{Github}{Xcode 4 Template Generator}{}{}
@@ -187,41 +181,39 @@ where I can both contribute and learn from a great team of people.}}
 \cventry{\begin{small}Nov 2010--Mar 2011\end{small}}{Member}{Study Group of eLearning Lab.}{IT Telkom Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-    Study on eLearning technology particularly web based application eLearning
-    and IEEE Learning Technology System Architecture (LTSA) framework which
-    operate in an environment of distributed system.\\
+        Studied on eLearning technology particularly web based application eLearning and IEEE Learning Technology System Architecture (LTSA) framework
+        which operate in an environment of distributed system.
     \end{scriptsize}
 }
 \cventry{\begin{small}Dec 2009--Oct 2010\end{small}}{Member}{Study Group of Data Mining Lab.}{IT Telkom Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-    Study and research for implementing K-nearest Neighbor Algorithm and Hidden
-    Markov Model for machine learning application.\\ 
+        Studied and researched for implementing K-nearest Neighbor Algorithm and Hidden Markov Model for machine learning application. 
     \end{scriptsize}
 }
-\cventry{\begin{small}Sep 2007--Aug 2009\end{small}}{Researcher \& Teaching Assistant}{Teleinformatics \& Operating System Lab.}{IT Telkom Bandung, Indonesia}{}
+\cventry{\begin{small}Sep 2007--Aug 2009\end{small}}{Research \& Teaching Assistant}{Teleinformatics \& Operating System Lab.}{IT Telkom Bandung, Indonesia}{}
 {
     \begin{itemize}
-    \item Doing practical research: "Implementing Failover Firewalls System using CARP Protocol on OpenBSD". 
-    \item Teaching basic computer network course material for students in class and laboratory practice.\\
+        \item Doing practical research: "Implementing Failover Firewalls System using CARP Protocol on OpenBSD". 
+        \item Teaching basic computer network course material for students in class and laboratory practice.
     \end{itemize}
 }
 \cventry{\begin{small}Aug 2006--May 2007\end{small}}{Activist}{Linux User Group (LUG)}{STT Telkom Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-    Participate actively to help promoting and teaching open source software in my local campus community.\\
+        Participated actively to help promoting and teaching open source software in my local campus community.
     \end{scriptsize}
 }
 \cventry{\begin{small}Dec 2004--Oct 2006\end{small}}{Journalist}{Masyarakat Jurnalistik}{STT Telkom Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-    Learned about journalistic and wrote news articles for my campus journal/magazine as amateur journalist.\\
+        Learned about journalistic and wrote news articles for my campus journal/magazine as amateur journalist.
     \end{scriptsize}
 }
 \cventry{\begin{small}Nov 2004--May 2005\end{small}}{Member}{Study Group of Artificial Intelligence Lab.}{STT Telkom Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-    Study fundamental theory about Artificial Intelligence and its simple algorithms implementation in software.\\
+        Studied fundamental theory about Artificial Intelligence and its simple algorithms implementation in software.
     \end{scriptsize}
 }
 
@@ -233,81 +225,73 @@ where I can both contribute and learn from a great team of people.}}
 \cventry{\begin{small}Jun 2012\end{small}}{Cisco Innovate 2012}{Seminar}{by Cisco Systems}{Jakarta, Indonesia}
 {
     \begin{scriptsize}
-    As representative for my employer (PT. Bigjava) to learn Cisco's new
-    innovations that can be used as technical references to improve my company's
-    technology products.\\
+        As representative for my employer (PT. Bigjava) to learn Cisco's new innovations that can be used as technical references to improve my
+        company's technology products.
     \end{scriptsize}
 }
 \cventry{\begin{small}Feb 2011\end{small}}{Qt Workshop for Developer}{Short Course}{by Nokia Indonesia}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As software developer, I came to learn developing application using Qt framework
-    as infrastructure basis that would be run on Nokia's MeeGo mobile OS platform.\\
+        As software developer, I came to learn developing application using Qt framework as infrastructure basis that would be run on Nokia's MeeGo
+        mobile OS platform.
     \end{scriptsize}
 }
 \cventry{\begin{small}Feb 2010\end{small}}{Security in eBanking}{Seminar}{by Switching Technique Lab. IT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As seminar participant, I came to learn technology security issues and trend in financial
-    transaction via online eBanking especially at banks in Indonesia.\\
+        As seminar participant, I came to learn technology security issues and trend in financial transaction via online eBanking especially at
+        banks in Indonesia.
     \end{scriptsize}
 }
 \cventry{\begin{small}Feb 2009\end{small}}{IP Multimedia Sub System (IMS) Technology}{Seminar}{by Switching Technique Lab. IT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As seminar participant, I came to learn about IMS technology implementation
-    in telecommunication industry and its open source implementation like OpenIMS that
-    can be used to build core element of IMS architecture.\\
+        As seminar participant, I came to learn about IMS technology implementation in telecommunication industry and its open source implementation
+        like OpenIMS that can be used to build core element of IMS architecture.
     \end{scriptsize}
 }
 \cventry{\begin{small}Sep 2008\end{small}}{Ruby on Rails Application Development}{Short Course}{by Software Engineering Lab. IT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As student, I learned to build application using Ruby on Rails framework for
-    rapid web application prototyping.\\
+        As software developer, I learned to build application using Ruby on Rails framework for rapid web application prototyping.
     \end{scriptsize}
 }
 \cventry{\begin{small}Sep 2007\end{small}}{WiMax Technology}{Short Course}{by Mobile Communication Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As student, I learned basic WiMax technology, deployment, and its application in
-    telecommunication industry.\\
+        As student, I learned basic WiMax technology, deployment, and its application in telecommunication industry.
     \end{scriptsize}
 }
 \cventry{\begin{small}Sep 2006\end{small}}{eBusiness and Portal Service}{Seminar}{by Software Engineering Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As seminar participant, I learned about economic potential of online
-    business based on portal service web application which can be built using
-    web frameworks.\\
+        As seminar participant, I learned about economic potential of online business based on portal service web application which can be built
+        using web frameworks.
     \end{scriptsize}
 }
 \cventry{\begin{small}May 2006\end{small}}{Softswitch Training Using Asterisk}{Short Course}{by Telecommunication Access Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As student, I learned to setup and configure Asterisk softswitch for campus telephone/VoIP exchange.\\
+        As trainee, I learned to build, configured, and maintained Asterisk softswitch server functioned as campus area VoIP telephone exchange.
     \end{scriptsize}
 }
 \cventry{\begin{small}Mar 2005\end{small}}{Open Source and Network Security}{Seminar}{by Teleinformatics Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As seminar participant, I learned about open source software that can be used
-    as tool for doing network security assessment and hardening computer
-    networks.\\
+        As seminar participant, I learned about open source software that can be used as tool for doing network security assessment and hardening
+        computer networks.
     \end{scriptsize}
 }
 \cventry{\begin{small}Jan 2005\end{small}}{Relational Database Fundamental Training}{Short Course}{by Database Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As student, I learned to create relational database application using ER diagram as
-    a design basis and implementing it on MS SQL platform.\\
+        As student, I learned to create relational database application using Entity Relationship Diagram as design basis then implemented on MS SQL platform.
     \end{scriptsize}
 }
 \cventry{\begin{small}Dec 2004\end{small}}{Workshop Computer Hardware \& Troubleshooting}{Short Course}{by Computer Hardware Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-    As student, I learned to assemble personal computer (PC) hardware and how to
-    do computer troubleshooting.\\
+        As student, I learned to assemble personal computer (PC) hardware and how to do computer troubleshooting.
     \end{scriptsize}
 }
 
@@ -318,7 +302,7 @@ where I can both contribute and learn from a great team of people.}}
 \section{References}
 \cventry{}{Available upon Request}{}{}{}
 {
-    %list of people as references
+    %list of people as work references
 }
 
 \end{document}
