@@ -1,20 +1,20 @@
-%% Modified version of ModernCV Latex template for my CV
-%% Muh. Fuad Hasan (March 2013)
+%% Modified version of ModernCV template for my CV in LaTeX
+%% Muh. Fuad Hasan, 17 March 2013
 %% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com)
-%  TODO:
-% - Always update with more entries
-% - Clean-up, make simple, brief but informative
-% - Proofreading (check grammar and spelling)
+% NOTE:
+%1) add better information to _SKILL_ & _EXPERIENCE_ section
+%2) check grammar and spelling
+%3) keep it informative and simple
 
 %----------------------------------------------------------------------------------
-%            Pre (done)
+%            PRE
 %----------------------------------------------------------------------------------
 \documentclass[10pt, a4paper]{moderncv}
 \moderncvtheme[blue, roman]{classic}                    % default theme is classic
 
 % only for xelatex
 \usepackage{ifxetex}
-\ifxetex                								
+\ifxetex
     \usepackage{xltxtra}                                % this is load both fontspec & xunicode
     \usepackage{fontspec}
     \setromanfont{Helvetica Neue}
@@ -36,7 +36,7 @@
 \firstname{}
 \familyname{}
 \photo{picture}
-\title{Curriculum Vitae} 
+\title{Curriculum Vitae}
 \address{}{Jakarta, Indonesia}
 \mobile{+62 857 789 897 17}
 \email{fuad\_hasan@fastmail.jp}
@@ -54,7 +54,7 @@
 
 
 %----------------------------------------------------------------------------------
-%            Intro (done)
+%            INTRO (done)
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
@@ -68,7 +68,7 @@
 
 
 %----------------------------------------------------------------------------------
-%            Personal (done)
+%            PERSONAL (done)
 %----------------------------------------------------------------------------------
 \section{Personal}
 \cvline{Full Name}{Muhammad Fuad Hasan}
@@ -79,7 +79,7 @@
 
 
 %----------------------------------------------------------------------------------
-%            Education (done)
+%            EDUCATION (done)
 %----------------------------------------------------------------------------------
 \section{Education}
 \cventry{\begin{small}Oct 2011\end{small}}{Bachelor of Engineering in Informatics Engineering}{STT Telkom (IT Telkom)}{Bandung, Indonesia}{}
@@ -91,76 +91,76 @@
 
 
 %----------------------------------------------------------------------------------
-%            Experience (more explanation: done)
+%            EXPERIENCE (more explanation: done)
 %----------------------------------------------------------------------------------
 \section{Experience}
-\cventry{\begin{small}Nov 2012--Current\end{small}}{Software Developer (Freelance)}{Kickstart Interactive (startup)}{}{Jakarta, Indonesia} 
-{ 
-    \begin{scriptsize} 
+\cventry{\begin{small}Nov 2012--Current\end{small}}{Software Developer (Freelance)}{Kickstart Interactive (startup)}{Jakarta, Indonesia}{}
+{
+    \begin{scriptsize}
         Contribute in development of "Paramanusa Filing" application product with target market for small and middle enterprise.
     \end{scriptsize}
 }
-\cventry{\begin{small}Nov 2011--Oct 2012\end{small}}{Network Engineer}{PT. Bigjava (bigjava.com)}{}{Jakarta Selatan, Indonesia} 
-{ 
-    \begin{itemize} 
-        \item Developed and deployed network application product with target market for telecommunication companies in Indonesia.
-        \item Met with clients to establish software specifications and also doing product presentation to potential customers.
-        \item Led a small team of 2-3 engineers to work on a project in specific product development.
+\cventry{\begin{small}Nov 2011--Oct 2012\end{small}}{Network Engineer}{PT. Bigjava (bigjava.com)}{Jakarta Selatan, Indonesia}{}
+{
+    \begin{itemize}
+        \item Developed (VDPI Moreto and Genorks) application products and deployed it on customer's data center.
+        \item Met with clients to establish software specifications and give product presentations (technical sales).
+        \item Led a small team of 2-3 engineers to work on a project for specific product development.
     \end{itemize}
 }
-\cventry{\begin{small}Jul--Sep 2009\end{small}}{Network Engineer (Intern)}{PT. Bandung Sinergi Akses Teknologi (Greenlinks ISP)}{}{Bandung, Indonesia}
+\cventry{\begin{small}Jul--Sep 2009\end{small}}{Network Engineer (Intern)}{PT. Bandung Sinergi Akses Teknologi (Greenlinks ISP)}{Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-        Monitor and study network performance of Greenlinks data center as information basis in planning to improve its network
-        service to end-clients.
+        Monitored and studied performance of Greenlinks's network infrastructure as information basis for planning process to improve its network services in future.
     \end{scriptsize}
 }
-\cventry{\begin{small}Jul--Oct 2008\end{small}}{Network Technician (Freelance)}{Independent Contractor}{}{Bandung, Indonesia}
+\cventry{\begin{small}Jul--Oct 2008\end{small}}{Network Technician (Freelance)}{Independent Contractor}{Bandung, Indonesia}{}
 {
     \begin{scriptsize}
         Installed, configured, and maintained computer network infrastructure for blocks home residence.
     \end{scriptsize}
 }
-\cventry{\begin{small}Jul--Aug 2007\end{small}}{Customer Complaint Service Officer (Intern)}{PT. Telekomunikasi Indonesia}{}{Bandung, Indonesia}
+\cventry{\begin{small}Jul--Aug 2007\end{small}}{Customer Complaint Service Officer (Intern)}{PT. Telekomunikasi Indonesia}{Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-        Handled formal complaint from customer and developed a web application to help managing complaint's problem solving process.
+        Handled formal complaint from customer and developed specific web application to help managing complaint's problem solving process.
     \end{scriptsize}
 }
 
 
 %----------------------------------------------------------------------------------
-%            Skills (more explanation, fix this first)
+%            SKILLS (more information)
 %----------------------------------------------------------------------------------
 \section{Skills}
-\cvline{Languages}{C++, Python, Perl, Shell Script, Java, PHP, SQL, \LaTeX, Scheme, Go}     % computer language
-\cvline{Protocols \& APIs}{ XML, JSON, SOAP, REST}                                          %
-\cvline{Software}{gcc, gdb, BASH/ZSH, Vim, Microsoft office, XFCE, KDE, GNOME etc}         % software, need framework qt mpi etc
-\cvline{Database}{MongoDB, MySQL, Redis, PostgreSQL, Oracle, MS SQL}                        % database
-\cvline{Hardware}{ATCA platform, IBM, HP, and Dell Blade Server}                            % hardware
-\cvline{Operating System}{GNU/Linux (RedHat/CentOS, SuSE, Slackware, and Debian/Ubuntu), BSD (FreeBSD,
-    OpenBSD, NetBSD, OpenDarwin, and OpenSolaris), Apple OS X, Microsoft
-    Windows (desktop/server)}                                                               % operatingsystems
-\cvline{Virtualization}{VMware, VirtualBox, Qemu}                                           % virtual
-\cvline{SCM}{Git, Mercurial, and CVS}                                                       % cvs
-\cvline{Log Management}{Splunk, Logstash}                                                   % 
-\cvline{Network Simulator}{Omnet++, NS2, Opnet, GNS3}                                       % simulator, need numerial comp
-\cvline{Network Monitoring}{Nagios, OpenNMS}                                                % network monitoring
-\cvline{Network Service}{DNS (Bind), web proxy (Squid), web server (Apache,
-    Lighttpd, Nginx), ftp server (vsftpd), mail server (qmail, postfix,
-    sendmail), vpn server (OpenVPN, mpd), VoIP server (Asterisk and SER)}                   % network serv, need firewall ids etc
-\cvline{Packet Analyzer}{Wireshark, TCPdump/snoop}                                          % packet analyzer 
-\cvline{Idioms}{Indonesian (native proficiency), English (professional working proficency)} % human language 
+\cvline{Computer Languages}{C/C++, Python, Perl, Shell Script, Java, PHP, SQL, Scheme, Ruby}
+\cvline{Operating System}{GNU/Linux (RedHat/CentOS, SuSE, Slackware, and Debian/Ubuntu),
+    BSD (FreeBSD, OpenBSD, NetBSD, OpenDarwin, and OpenSolaris), Apple OS X,
+    Microsoft Windows (desktop/server)}
+\cvline{Database}{MongoDB, MySQL, Redis, PostgreSQL, Oracle, Ms SQL}
+\cvline{Server Machine}{AdvancedTCA platform, (IBM, HP, and Dell) Blade Server}
+\cvline{Virtualization}{VMware Workstation, VirtualBox, Qemu, Xen, Bochs, FreeBSD Jail, Solaris Zones}
+\cvline{Code Management}{Git, Mercurial, CVS}
+\cvline{Log Management}{Splunk, Logstash}
+\cvline{Network Simulator}{Omnet++, NS2, Opnet Modeler, GNS3}
+\cvline{Network Monitoring}{Nagios, OpenNMS}
+\cvline{Network Service}{DNS (Bind), web proxy (Squid), web server (Apache, Lighttpd, Nginx),
+    ftp server (vsftpd), mail server (Qmail, postfix, Sendmail), vpn server (OpenVPN, mpd),
+    SMB/CIFS server (Samba), NFS server, VoIP server (Asterisk and SER)}
+\cvline{Network Firewall}{BSD PF, Linux IPtables}
+\cvline{Protocol Analyzer}{Wireshark, TCPdump, ngrep}
+\cvline{Common Software}{Unix/Linux development toolchain, Vim, Eclipse, Microsoft Visual Studio, Microsoft Project, Microsoft Office}
+\cvline{Idioms}{Indonesian (native proficiency), English (professional working proficency)}
+%\cvline{Network Protocol \& API}{ TCP/IP, JSON, REST, OpenSS7/SIGTRAN}
 % maybe i can add some for non-categorize points like quick learning/adapt, network protocol knowledge etc
 
 
 %----------------------------------------------------------------------------------
-%            Projects & Interests (i'll put this on later if needed)
+%            PROJECTS & INTERESTS (skip it)
 %----------------------------------------------------------------------------------
 %\section{Projects \& Interests}
 %\cventry{\begin{small}July 2009--Current\end{small}}{Stack Overflow}{}{}{}
 %{
-%    \begin{small}Average top 15\% user, with a ~2.5k reputation.\end{small}\\              % symbol '\\' for adding newline
+%    \begin{small}Average top 15\% user, with a ~2.5k reputation.\end{small}\\
 %    \Colorhref{http://stackoverflow.com/users/145077/mr-gando}\\
 %}
 %\cventry{\begin{small}May 2011--Current\end{small}}{Github}{Xcode 4 Template Generator}{}{}
@@ -175,7 +175,7 @@
 
 
 %----------------------------------------------------------------------------------
-%            Activities (6 entries: done)
+%            ACTIVITIES (6 entries: done)
 %----------------------------------------------------------------------------------
 \section{Activities}
 \cventry{\begin{small}Nov 2010--Mar 2011\end{small}}{Member}{Study Group of eLearning Lab.}{IT Telkom Bandung, Indonesia}{}
@@ -188,14 +188,14 @@
 \cventry{\begin{small}Dec 2009--Oct 2010\end{small}}{Member}{Study Group of Data Mining Lab.}{IT Telkom Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-        Studied and researched for implementing K-nearest Neighbor Algorithm and Hidden Markov Model for machine learning application. 
+        Studied and researched for implementing K-nearest Neighbor Algorithm and Hidden Markov Model for machine learning application.
     \end{scriptsize}
 }
 \cventry{\begin{small}Sep 2007--Aug 2009\end{small}}{Research \& Teaching Assistant}{Teleinformatics \& Operating System Lab.}{IT Telkom Bandung, Indonesia}{}
 {
     \begin{itemize}
-        \item Doing practical research: "Implementing Failover Firewalls System using CARP Protocol on OpenBSD". 
-        \item Teaching basic computer network course material for students in class and laboratory practice.
+        \item Practical research: "Implementing Failover Firewalls System using CARP Protocol on OpenBSD".
+        \item Taught computer network course on selected topics for engineering students in laboratory practice.
     \end{itemize}
 }
 \cventry{\begin{small}Aug 2006--May 2007\end{small}}{Activist}{Linux User Group (LUG)}{STT Telkom Bandung, Indonesia}{}
@@ -213,13 +213,13 @@
 \cventry{\begin{small}Nov 2004--May 2005\end{small}}{Member}{Study Group of Artificial Intelligence Lab.}{STT Telkom Bandung, Indonesia}{}
 {
     \begin{scriptsize}
-        Studied fundamental theory about Artificial Intelligence and its simple algorithms implementation in software.
+        Studied fundamental theory about Artificial Intelligence and its basic algorithms implementation in software.
     \end{scriptsize}
 }
 
 
 %----------------------------------------------------------------------------------
-%            Short Course & Seminar (11 entries: done)
+%            SHORT COURSE & SEMINAR (11 entries: done)
 %----------------------------------------------------------------------------------
 \section{Short Course \& Seminar}
 \cventry{\begin{small}Jun 2012\end{small}}{Cisco Innovate 2012}{Seminar}{by Cisco Systems}{Jakarta, Indonesia}
@@ -253,7 +253,7 @@
 \cventry{\begin{small}Sep 2008\end{small}}{Ruby on Rails Application Development}{Short Course}{by Software Engineering Lab. IT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-        As software developer, I learned to build application using Ruby on Rails framework for rapid web application prototyping.
+        As software developer, I learned to build application based on Ruby on Rails framework for rapid web application prototyping.
     \end{scriptsize}
 }
 \cventry{\begin{small}Sep 2007\end{small}}{WiMax Technology}{Short Course}{by Mobile Communication Lab. STT Telkom}{Bandung, Indonesia}
@@ -265,27 +265,28 @@
 \cventry{\begin{small}Sep 2006\end{small}}{eBusiness and Portal Service}{Seminar}{by Software Engineering Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-        As seminar participant, I learned about economic potential of online business based on portal service web application which can be built
-        using web frameworks.
+        As seminar participant, I learned about economic potential of developing online business based on portal service web application which built
+        on web framework technologies.
     \end{scriptsize}
 }
-\cventry{\begin{small}May 2006\end{small}}{Softswitch Training Using Asterisk}{Short Course}{by Telecommunication Access Lab. STT Telkom}{Bandung, Indonesia}
+\cventry{\begin{small}May 2006\end{small}}{Softswitch Training Using Asterisk}{Short Course}{by Network Access Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
         As trainee, I learned to build, configured, and maintained Asterisk softswitch server functioned as campus area VoIP telephone exchange.
     \end{scriptsize}
 }
-\cventry{\begin{small}Mar 2005\end{small}}{Open Source and Network Security}{Seminar}{by Teleinformatics Lab. STT Telkom}{Bandung, Indonesia}
+\cventry{\begin{small}Mar 2005\end{small}}{Open Source and Network Security}{Seminar}{by Teleinformatics \& OS Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-        As seminar participant, I learned about open source software that can be used as tool for doing network security assessment and hardening
+        As seminar participant, I learned about open source softwares that can be used as tools for doing network security assessment and hardening
         computer networks.
     \end{scriptsize}
 }
 \cventry{\begin{small}Jan 2005\end{small}}{Relational Database Fundamental Training}{Short Course}{by Database Lab. STT Telkom}{Bandung, Indonesia}
 {
     \begin{scriptsize}
-        As student, I learned to create relational database application using Entity Relationship Diagram as design basis then implemented on MS SQL platform.
+        As student, I learned to create relational database application using Entity Relationship diagram as design basis then implemented it
+        on Microsoft SQL platform.
     \end{scriptsize}
 }
 \cventry{\begin{small}Dec 2004\end{small}}{Workshop Computer Hardware \& Troubleshooting}{Short Course}{by Computer Hardware Lab. STT Telkom}{Bandung, Indonesia}
